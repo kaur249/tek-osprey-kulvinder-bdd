@@ -10,12 +10,13 @@ import org.junit.runner.RunWith;
         features= "classpath:features", // this is for the all the feature you have and it will run
         glue = "tek.bdd.steps",
         dryRun = false,
-        tags = "@Smoke",
+        tags = "@Regression",
         // if you want to run regression, tags= "@Regression" or "@Smoke" or "@Story_2" , can run by mutiple using "@Story_1" or @Story_2"
         plugin = {
                 "pretty",
                 // use "pretty", to make it look pretty
-                "html:target/html_report/index.html"
+                "html:target/html_report/index.html",
+                "json:target/jsonReports/report.json"
 
                 // If we run it again, it will fail because the username and password is entered twice, they were duplicated
         }
