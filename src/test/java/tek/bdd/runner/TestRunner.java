@@ -10,7 +10,7 @@ import org.junit.runner.RunWith;
         features= "classpath:features", // this is for the all the feature you have and it will run
         glue = "tek.bdd.steps",
         dryRun = false,
-        tags = "@Regression",
+        tags = "@Smoke",
         // if you want to run regression, tags= "@Regression" or "@Smoke" or "@Story_2" , can run by mutiple using "@Story_1" or @Story_2"
         plugin = {
                 "pretty",
